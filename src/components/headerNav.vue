@@ -1,7 +1,7 @@
 <template>
   <header class="header__container">
     <div class="header__logo">
-      <i class="fa fa-diamond"></i>
+      <img src="../assets/logo.svg">
     </div>
 
     <nav class="nav__container">
@@ -61,6 +61,10 @@ export default {
     background: $accent-color;
     font-size: 2.2em;
     color: #fff;
+
+    & img {
+      width: 45px;
+    }
   }
 }
 
