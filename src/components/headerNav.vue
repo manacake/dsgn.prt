@@ -70,7 +70,8 @@ export default {
     align-items: center;
     margin-right: 70px;
 
-    font-family: Dosis-SemiBold;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 600;
     font-size: 14px;
     color: $text-color;
     letter-spacing: 0.65px;

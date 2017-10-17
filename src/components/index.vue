@@ -65,7 +65,8 @@ export default {
 
     & h1 {
       margin: 13px 0;
-      font-family: Dosis-SemiBold;
+      font-family: 'Dosis', sans-serif;
+      font-weight: 600;
       font-size: 2.4em;
       color: #fff;
       letter-spacing: 1px;
@@ -73,7 +74,8 @@ export default {
 
     & p {
       margin-bottom: 30px;
-      font-family: OpenSans-Regular;
+      font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      font-weight: 400;
       font-size: 18px;
       letter-spacing: 0.23px;
       line-height: 23px;
