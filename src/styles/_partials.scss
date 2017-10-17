@@ -1,0 +1,78 @@
+$background-color: #f7f7f7;
+$accent-color: #000;
+$secondary-color: #897C71;
+$tertiary-color: #897171;
+$text-color: $secondary-color;
+
+// @font-face {
+//   font-family: 'Didot';
+//   src: url('../fonts/Didot.ttf') format('truetype'); /* Safari, Android, iOS */
+// }
+//
+// @font-face {
+//   font-family: 'Gill Sans';
+//   src: url('../fonts/GillSans-Light.ttf') format('truetype'); /* Safari, Android, iOS */
+//   font-weight: 300;
+// }
+// @font-face {
+//   font-family: 'Gill Sans';
+//   src: url('../fonts/GillSans.ttf') format('truetype'); /* Safari, Android, iOS */
+//   font-weight: 500;
+// }
+
+%iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9002;
+}
+
+%action-button {
+  flex: 1 1 auto;
+  padding: 10px 30px;
+  position: relative;
+  overflow: hidden;
+  transition: 300ms;
+  font-family: 'Gill Sans', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  background: transparent;
+  &:after {
+    content: '';
+    bottom: 0;
+    left: 50%;
+    height: 3px;
+    position: absolute;
+    transition: 300ms;
+    width: 0;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin media($bp) {
+  @if $bp == xxs {
+    @media (max-width: 479px) { @content; }
+  }
+  @else if $bp == xs {
+    @media (min-width: 480px) { @content; }
+  }
+  @else if $bp == sm {
+    @media (min-width: 768px) { @content; }
+  }
+  @else if $bp == md {
+    @media (min-width: 992px) { @content; }
+  }
+  @else if $bp == lg {
+    @media (min-width: 1200px) { @content; }
+  }
+  @else {
+    @warn 'Not a supported value';
+  }
+}
