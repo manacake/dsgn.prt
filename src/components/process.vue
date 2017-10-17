@@ -1,12 +1,17 @@
 <template>
-  <div class="">
+  <div class="container">
+    <headerNav></headerNav>
     process
   </div>
 </template>
 
 <script>
+import headerNav from './headerNav'
 export default {
-  name: 'process'
+  name: 'process',
+  components: {
+    headerNav: headerNav
+  }
 }
 </script>
 
