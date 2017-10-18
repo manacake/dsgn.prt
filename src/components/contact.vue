@@ -24,9 +24,6 @@
               Email Address
             </label>
           </div>
-          <p v-if="!emailIsValid" class="mdc-textfield-helptext mdc-textfield-helptext--persistent textfield__message">
-            Enter a valid email
-          </p>
         </div>
 
         <div class="mdc-textfield mdc-textfield--textarea">
@@ -70,10 +67,19 @@ export default {
 
 .page {
   &__intro {
+    @include media(xxs) {
+      padding: 0 15px;
+      margin: 0;
+    }
+    @include media(xs) {
+      padding: 0 15px;
+      margin: 0 70px;
+    }
+    @include media(sm) {
+      padding: 0 175px;
+    }
     display: inline-flex;
     flex-flow: column nowrap;
-    margin: 0 70px;
-    padding: 0 175px;
     text-align: center;
     border-radius: 1px;
     background: $text-color;
@@ -90,20 +96,17 @@ export default {
   }
 
   &__content {
-    margin: 0 70px;
-    padding: 0 175px;
-  }
-}
-
-.textfield {
-  &__message {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: right;
-    pointer-events: none;
-    color: $accent-color;
-    font-weight: 600;
+    @include media(xxs) {
+      padding: 0 15px;
+      margin: 0;
+    }
+    @include media(xs) {
+      padding: 0 15px;
+      margin: 0 70px;
+    }
+    @include media(sm) {
+      padding: 0 175px;
+    }
   }
 }
 
