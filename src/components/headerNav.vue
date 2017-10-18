@@ -93,6 +93,7 @@ export default {
     justify-content: center;
     width: 70px;
     height: 70px;
+    border-radius: 1px;
     background: $accent-color;
     font-size: 2.2em;
     color: #fff;

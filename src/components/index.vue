@@ -44,6 +44,7 @@ export default {
 .index {
   &__container {
     position: relative;
+    border-radius: 1px;
     background: $text-color;
     color: #fff;
     overflow: hidden;
