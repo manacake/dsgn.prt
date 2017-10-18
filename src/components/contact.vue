@@ -5,12 +5,13 @@
       <h1>Contact Us</h1>
       <p>We're here to help. Use the handy contact form or email us to get in touch. We'll get back to you as soon as we can.</p>
     </div>
+
     <div class="page__content">
-      <form id="form--contact" @submit.prevent="submitForm">
+      <form method="POST" action="http://formspree.io/tinayzhao@gmail.com">
         <div class="mdc-form-field">
           <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-            <input v-model="name" id="name" type="text" class="mdc-textfield__input">
-            <label for="email" class="mdc-textfield__label">
+            <input v-model="name" id="name" name="name" type="text" class="mdc-textfield__input">
+            <label for="name" class="mdc-textfield__label">
               Name
             </label>
           </div>
@@ -18,7 +19,7 @@
 
         <div class="mdc-form-field">
           <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
-            <input v-model="email" id="email" type="text" class="mdc-textfield__input">
+            <input v-model="email" id="email" name="email" type="email" class="mdc-textfield__input">
             <label for="email" class="mdc-textfield__label">
               Email Address
             </label>
@@ -28,12 +29,12 @@
           </p>
         </div>
 
-        <div class="mdc-textfield mdc-textfield--textarea" data-demo-no-auto-js="">
-          <textarea v-model="message" id="message" class="mdc-textfield__input" rows="8" placeholder="Message"></textarea>
+        <div class="mdc-textfield mdc-textfield--textarea">
+          <textarea v-model="message" id="message" name="message" class="mdc-textfield__input" rows="8" placeholder="Message"></textarea>
         </div>
 
         <button type="submit" class="button button--accent">
-          Submit
+          Send
         </button>
       </form>
     </div>
@@ -48,7 +49,6 @@ export default {
   name: 'contact',
   data () {
     return {
-      emailIsValid: true,
       email: undefined,
       name: undefined,
       message: undefined
@@ -57,24 +57,6 @@ export default {
 
   mounted () {
     mdc.autoInit()
-  },
-
-  methods: {
-    async submitForm () {
-      const emailValid = await this.validateEmail(this.email)
-      if (emailValid) {
-        this.emailIsValid = true
-        // this.tokenSent = await auth.sendLoginToken(this.email)
-      } else {
-        this.emailIsValid = false
-      }
-    },
-
-    validateEmail (email) {
-      const regex = /(?:[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*|"(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*")@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])/g
-      const validity = regex.test(email)
-      return validity
-    }
   },
 
   components: {
