@@ -62,6 +62,7 @@ export default {
     position: absolute;
     left: 48px;
     top: 200px;
+    z-index: 1;
 
     & h1 {
       margin: 13px 0;

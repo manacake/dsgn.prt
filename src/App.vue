@@ -40,7 +40,12 @@ a {
 
 .hidden-xxs {
   @include media(xxs) {
-    display: none;
+    display: none !important;
+  }
+}
+.visible-xxs {
+  @include media(xs) {
+    display: none !important;
   }
 }
 
@@ -64,6 +69,7 @@ a {
   letter-spacing: .025em;
   text-decoration: none;
   transition: all .15s ease;
+  outline: none;
 
   &:hover {
     transform: translateY(-1px);
