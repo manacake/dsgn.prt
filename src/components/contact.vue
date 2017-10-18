@@ -6,7 +6,7 @@
       <p>We're here to help. Use the handy contact form or email us to get in touch. We'll get back to you as soon as we can.</p>
     </div>
 
-    <div class="page__content">
+    <div class="page__content page__pad">
       <form method="POST" action="http://formspree.io/tinayzhao@gmail.com">
         <div class="mdc-form-field">
           <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
@@ -64,51 +64,6 @@ export default {
 
 <style lang="scss">
 @import '../styles/partials';
-
-.page {
-  &__intro {
-    @include media(xxs) {
-      padding: 0 15px;
-      margin: 0;
-    }
-    @include media(xs) {
-      padding: 0 15px;
-      margin: 0 70px;
-    }
-    @include media(sm) {
-      padding: 0 175px;
-    }
-    display: inline-flex;
-    flex-flow: column nowrap;
-    text-align: center;
-    border-radius: 1px;
-    background: $text-color;
-    color: #fff;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-
-    & h1 {
-      margin-top: 16px;
-      margin-bottom: 0;
-      font-family: 'Dosis', sans-serif;
-      font-size: 1.5em;
-      font-weight: 600;
-    }
-  }
-
-  &__content {
-    @include media(xxs) {
-      padding: 0 15px;
-      margin: 0;
-    }
-    @include media(xs) {
-      padding: 0 15px;
-      margin: 0 70px;
-    }
-    @include media(sm) {
-      padding: 0 175px;
-    }
-  }
-}
 
 // Override mdc
 .mdc {

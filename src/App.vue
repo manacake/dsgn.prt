@@ -50,7 +50,7 @@ a {
 }
 
 .container {
-  max-width: 1024px;
+  max-width: 1140px;
   margin: 0 auto;
   position: relative;
 }
@@ -93,6 +93,67 @@ a {
     text-shadow: 0 1px 2px lighten($text-color, 30%);
     &:hover {
       color: $text-color;
+    }
+  }
+}
+
+.page {
+  &__intro {
+    @include media(xxs) {
+      padding: 0 15px;
+      margin: 0;
+    }
+    @include media(xs) {
+      padding: 0 15px;
+      margin: 0 70px;
+    }
+    @include media(sm) {
+      padding: 0 175px;
+    }
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    border-radius: 1px;
+    background: $text-color;
+    color: #fff;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+
+    & h1 {
+      margin-top: 16px;
+      margin-bottom: 0;
+      font-family: 'Dosis', sans-serif;
+      font-size: 1.5em;
+      font-weight: 600;
+    }
+  }
+
+  &__content {
+    @include media(xxs) {
+      margin: 0;
+    }
+    @include media(xs) {
+      margin: 0 70px;
+    }
+    &--flex {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__border {
+      border-bottom: 1px solid lighten($text-color, 40%);
+    }
+  }
+
+  &__pad {
+    @include media(xxs) {
+      padding: 0 15px;
+      margin: 0;
+    }
+    @include media(xs) {
+      padding: 0 15px;
+      margin: 0 70px;
+    }
+    @include media(sm) {
+      padding: 0 175px;
     }
   }
 }

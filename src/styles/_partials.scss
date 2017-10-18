@@ -6,6 +6,8 @@ $lite-blue: #c2f2ed;
 $lite-green: #c3f2c2;
 $lite-orange: #f7d3c6;
 $lite-purple: #ebc2f2;
+$lite-yellow: #f2eac2;
+$lite-pink: #f2c2ea;
 
 @mixin media($bp) {
   @if $bp == xxs {
