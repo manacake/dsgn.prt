@@ -27,7 +27,7 @@
     </nav>
 
     <div class="mdc-menu-anchor visible-xxs">
-      <a @click="triggerMenu" href="#" class="button button--accent">Menu</a>
+      <button @click="triggerMenu" href="#" class="button button--accent">Menu</button>
       <div class="mdc-simple-menu" tabindex="-1">
         <ul class="mdc-simple-menu__items mdc-list" role="menu" aria-hidden="true">
           <li class="mdc-list-item nav__item" role="menuitem" tabindex="0">
