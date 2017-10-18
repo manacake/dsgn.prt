@@ -1,7 +1,10 @@
 <template>
   <div class="container">
     <headerNav></headerNav>
-    about
+    <div class="page__intro">
+      <h1>About Design.Parts</h1>
+      <p>You have a great idea, we have people who can make it real. Let’s make something together!</p>
+    </div>
   </div>
 </template>
 
