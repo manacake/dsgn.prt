@@ -1,8 +1,10 @@
 <template>
   <header class="header__container">
-    <div class="header__logo">
-      <img src="../assets/logo.svg">
-    </div>
+    <router-link to="/">
+      <div class="header__logo">
+        <img src="../assets/logo.svg">
+      </div>
+    </router-link>
 
     <nav class="nav__container hidden-xxs">
       <div class="nav__item">
