@@ -128,6 +128,8 @@ a {
   }
 
   &__content {
+    position: relative;
+    
     @include media(xxs) {
       margin: 0;
     }
@@ -140,6 +142,10 @@ a {
     }
     &__border {
       border-bottom: 1px solid lighten($text-color, 40%);
+
+      &--left {border-left: 3px solid lighten($text-color, 40%);}
+      &--right {border-right: 3px solid lighten($text-color, 40%);}
+      &--thick {border-bottom: 3px solid lighten($text-color, 40%);}
     }
   }
 
