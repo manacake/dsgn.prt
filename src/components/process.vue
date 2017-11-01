@@ -19,7 +19,7 @@
         Design
       </div>
       <p class="process__content">
-        Our first design process has four stages: Define, Develop, Engineer, Execute and Evaluate. We think of this as the Proof of Concept (P.o.C.) phase. It’ll start with Ideas, and end with a P.o.C. prototype. We also call this the ‘duct tape’ prototype. This may be a form prototype, without electronics, or an electronic prototype that may not resemble the final product in form. It’s function is to validate the concept, not be a final production sample.
+        Our design process has several stages: Define, Develop, Engineer, Execute and Evaluate. We'll build a Proof of Concept (P.o.C.) Which may be a form prototype, without electronics, or an electronic prototype that may not resemble the final product in form. The P.o.C.'s function is to validate the concept, not be a final production sample. from here, we'll move to the Engineering and then the Design verification and testing.
       </p>
       <p class="process__content">
         Define: In the Define stage, we’ll develop the team (ours and yours), assign roles, and identify stakeholders. That group then identifies the goals, inputs, objectives, scope and success criteria for your projects. We’ll wrap up this stage when resources have been committed and a design schedule has been agreed to.
