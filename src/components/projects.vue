@@ -10,19 +10,19 @@
       <div class="project__card">
         <div class="project__icon project__icon--orange"><i class="fa fa-crosshairs"></i></div>
         <h4>U2FToken</h4>
-        <p>Oat cake cake donut tart jelly marshmallow donut cookie. Sugar plum toffee dessert fruitcake. Croissant candy oat cake biscuit ice cream chocolate cake. Fruitcake caramels halvah dessert gummi bears powder tart.</p>
+        <p></p>
       </div>
 
       <div class="project__card project__card--padded">
         <div class="project__icon project__icon--blue"><i class="fa fa-moon"></i></div>
         <h4>OpenTPM</h4>
-        <p>Oat cake cake donut tart jelly marshmallow donut cookie. Sugar plum toffee dessert fruitcake. Croissant candy oat cake biscuit ice cream chocolate cake. Fruitcake caramels halvah dessert gummi bears powder tart.</p>
+        <p></p>
       </div>
 
       <div class="project__card">
         <div class="project__icon project__icon--purple"><i class="fa fa-bicycle"></i></div>
         <h4>Alexa's Playground</h4>
-        <p>Oat cake cake donut tart jelly marshmallow donut cookie. Sugar plum toffee dessert fruitcake. Croissant candy oat cake biscuit ice cream chocolate cake. Fruitcake caramels halvah dessert gummi bears powder tart.</p>
+        <p></p>
       </div>
     </div>
 
@@ -30,19 +30,19 @@
       <div class="project__card">
         <div class="project__icon project__icon--yellow"><i class="fa fa-fire-extinguisher"></i></div>
         <h4>USB Firewall</h4>
-        <p>Oat cake cake donut tart jelly marshmallow donut cookie. Sugar plum toffee dessert fruitcake. Croissant candy oat cake biscuit ice cream chocolate cake. Fruitcake caramels halvah dessert gummi bears powder tart.</p>
+        <p></p>
       </div>
 
       <div class="project__card project__card--padded">
         <div class="project__icon project__icon--pink"><i class="fa fa-gamepad"></i></div>
         <h4>USB Game Boy Cartridge</h4>
-        <p>Oat cake cake donut tart jelly marshmallow donut cookie. Sugar plum toffee dessert fruitcake. Croissant candy oat cake biscuit ice cream chocolate cake. Fruitcake caramels halvah dessert gummi bears powder tart.</p>
+        <p></p>
       </div>
 
       <div class="project__card">
         <div class="project__icon project__icon--green"><i class="fa fa-coffee"></i></div>
         <h4>Rampage Robots</h4>
-        <p>Oat cake cake donut tart jelly marshmallow donut cookie. Sugar plum toffee dessert fruitcake. Croissant candy oat cake biscuit ice cream chocolate cake. Fruitcake caramels halvah dessert gummi bears powder tart.</p>
+        <p></p>
       </div>
     </div>
   </div>
