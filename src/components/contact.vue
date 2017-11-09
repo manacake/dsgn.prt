@@ -7,7 +7,7 @@
     </div>
 
     <div class="page__content page__pad">
-      <form method="POST" action="http://formspree.io/jose@design.parts">
+      <form method="POST" action="http://formspree.io/jose@source.parts">
         <div class="mdc-form-field">
           <div class="mdc-textfield" data-mdc-auto-init="MDCTextfield">
             <input v-model="name" id="name" name="name" type="text" class="mdc-textfield__input">

@@ -114,6 +114,7 @@ export default {
         left: 49px;
         transform: rotate(180deg);
         font-size: 3em;
+        color: yellow;
       }
 
       &__cord {
